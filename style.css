@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #142f44;
+}
+
+.row {
+    display: flex;
+}
+
+.round {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 7px;
+    flex: 1;
+}
+
+.blue {
+    background-color: #205b7a;
+}
+
+.lightblue {
+    background-color: #a2bbcf;
+}
