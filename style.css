@@ -10,6 +10,20 @@ body {
     background-color: #142f44;
 }
 
+.result {
+    font-size: 24px;
+    font-weight: 700;
+    width: 320px;
+    height: 80px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .row {
     display: flex;
 }

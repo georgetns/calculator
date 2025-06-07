@@ -1,7 +1,8 @@
-let firstNumber = 0;
-let secondNumber = 0;
+let firstNumber = -1;
+let secondNumber = -1;
 let operator = "";
 let numberDivs = document.querySelectorAll(".blue");
+let resultDiv = document.querySelector(".result");
 
 const add = (x, y) => x + y;
 const subtract = (x, y) => x - y;
@@ -24,9 +25,20 @@ const operate = (x, y, operator) => {
     }
 };
 
+const updateDisplay = (input) => {
+    if (resultDiv.innerText.length < 10) {
+        resultDiv.innerText += input;
+    }
+    if (operator === "") {
+        firstNumber = Number(resultDiv.innerText);
+    } else {
+        secondNumber = Number(resultDiv.innerText);
+    }
+};
+
 for (node of numberDivs) {
     console.log(node);
     node.addEventListener("click", (e) => {
-        console.log(e.target.innerText);
+        updateDisplay(e.target.innerText);
     });
 }
